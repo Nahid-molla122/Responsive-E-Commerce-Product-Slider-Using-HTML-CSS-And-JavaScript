@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Slider using HTML, CSS And JavaScript</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="slider">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide-1 -->
+          <div class="swiper-slide">
+            <!-- box -->
+            <div class="slider-box">
+              <!-- img -->
+              <a href="#" class="slider-img">
+                <img src="./images/p1a.webp" alt="product" class="front-img" />
+                <img src="./images/p1b.webp" alt="product" class="back-img" />
+              </a>
+
+              <!-- Text -->
+              <div class="slider-text">
+                <strong>Boxy Denim Jacket</strong>
+                <span>$100.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide-2 -->
+          <div class="swiper-slide">
+            <!-- box -->
+            <div class="slider-box">
+              <!-- img -->
+              <a href="#" class="slider-img">
+                <img src="./images/p2a.jpg" alt="product" class="front-img" />
+                <img src="./images/p2b.avif" alt="product" class="back-img" />
+              </a>
+
+              <!-- Text -->
+              <div class="slider-text">
+                <strong>Boxy Denim Jacket</strong>
+                <span>$100.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide-3 -->
+          <div class="swiper-slide">
+            <!-- box -->
+            <div class="slider-box">
+              <!-- img -->
+              <a href="#" class="slider-img">
+                <img src="./images/p3a.jpg" alt="product" class="front-img" />
+                <img src="./images/p3b.webp" alt="product" class="back-img" />
+              </a>
+
+              <!-- Text -->
+              <div class="slider-text">
+                <strong>Boxy Denim Jacket</strong>
+                <span>$100.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide-4 -->
+          <div class="swiper-slide">
+            <!-- box -->
+            <div class="slider-box">
+              <!-- img -->
+              <a href="#" class="slider-img">
+                <img src="./images/p4a.avif" alt="product" class="front-img" />
+                <img src="./images/p4b.jpg" alt="product" class="back-img" />
+              </a>
+
+              <!-- Text -->
+              <div class="slider-text">
+                <strong>Boxy Denim Jacket</strong>
+                <span>$100.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide End -->
+
+          <!-- Slide-5 -->
+          <div class="swiper-slide">
+            <!-- box -->
+            <div class="slider-box">
+              <!-- img -->
+              <a href="#" class="slider-img">
+                <img src="./images/p5a.jpg" alt="product" class="front-img" />
+                <img src="./images/p5b.jpg" alt="product" class="back-img" />
+              </a>
+
+              <!-- Text -->
+              <div class="slider-text">
+                <strong>Boxy Denim Jacket</strong>
+                <span>$100.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide End -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
